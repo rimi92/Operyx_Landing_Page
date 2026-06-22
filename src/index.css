@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base reset ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0a84ff 0%, #005dff 40%, #07111f 100%);
+  color: #0f172a;
+  font-family: 'Syne', sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #020B18;
+}
+::-webkit-scrollbar-thumb {
+  background: #0066FF40;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0066FF;
+}
+
+/* ── Keyframes ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
