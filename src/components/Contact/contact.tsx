@@ -1,4 +1,4 @@
-'use client'
+_'use client'
 
 import { useState } from 'react'
 import type { Locale } from '../../i18n'
@@ -263,7 +263,6 @@ text-slate-900
             <div className="relative overflow-hidden rounded-[24px] border border-slate-200 bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF] shadow-sm px-5 sm:px-8 md:px-16 py-10 md:py-16">
               <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent" />
               
-<div className="grid ...<div className="h-6" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14">
 
