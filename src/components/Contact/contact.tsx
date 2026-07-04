@@ -267,7 +267,7 @@ text-slate-900
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14">
 
                 <ContactItem label={t.phoneLabel} icon={<Phone size={20} strokeWidth={1.5} className="text-blue-600" />}>
-                  <div className="flex flex-col gap-2 items-center ml-10-">
+                  <div className="flex flex-col gap-2 items-center">
                     <a href="tel:+21654885618" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-blue-600 transition">🇹🇳 +216 54 885 618</a>
                     <a href="tel:+4915228562716" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-blue-600 transition">🇩🇪 +49 152 2856 2716</a>
                   </div>

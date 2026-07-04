@@ -49,7 +49,7 @@ export default function Footer({ lang }: FooterProps) {
               />
             </a>
 
-           <p className="max-w-md text-sm leading-relaxed text-slate-600 -ml-4">
+          <p className="max-w-md text-sm leading-relaxed text-slate-600m l-0 md: ml-0 md:-ml-4">
   {t.tagline}
 </p>
 
