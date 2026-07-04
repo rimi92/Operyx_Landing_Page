@@ -1,4 +1,4 @@
-_'use client'
+'use client'
 
 import { useState } from 'react'
 import type { Locale } from '../../i18n'
