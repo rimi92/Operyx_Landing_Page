@@ -219,7 +219,7 @@ export default function Contact({ lang }: ContactProps) {
             inline-flex items-center gap-3 rounded-full
             border border-blue-500/20 bg-blue-500/[0.06]
             px-5 py-2 shadow-[0_0_18px_rgba(59,130,246,0.08)]
-V          ">
+          ">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-20"></span>
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-blue-500"></span>
@@ -231,7 +231,17 @@ V          ">
 
           {/* TITLE */}
                 <h1
-            className="max-w-5xl text-[42px] sm:text-[54px] lg:text-[72px] font-semibold leading-[1.08] tracking-[-0.04em] text-slate-900"
+            className="
+max-w-5xl
+text-[30px]
+sm:text-[42px]
+lg:text-[72px]
+font-semibold
+leading-tight
+lg:leading-[1.08]
+tracking-[-0.04em]
+text-slate-900
+"
             >
             {t.title}
             </h1>
@@ -250,23 +260,24 @@ V          ">
           <div className="flex flex-col gap-12 max-w-4xl mx-auto w-full px-4">
 
             {/* ── CONTACT CARD ── */}
-            <div className="relative overflow-hidden rounded-[24px] border border-slate-200 bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF] shadow-sm px-10 py-16 md:px-16">
+            <div className="relative overflow-hidden rounded-[24px] border border-slate-200 bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF] shadow-sm px-5 sm:px-8 md:px-16 py-10 md:py-16">
               <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent" />
-              <div className="h-6" />
-V
+              
+<div className="grid ...<div className="h-6" />
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14">
 
                 <ContactItem label={t.phoneLabel} icon={<Phone size={20} strokeWidth={1.5} className="text-blue-600" />}>
                   <div className="flex flex-col gap-2 items-center ml-10-">
-                    <a href="tel:+21654885618" className="text-[18px] font-bold font-mono text-slate-800 hover:text-blue-600 transition">🇹🇳 +216 54 885 618</a>
-                    <a href="tel:+4915228562716" className="text-[18px] font-bold font-mon text-slate-800 hover:text-blue-600 transition">🇩🇪 +49 152 2856 2716</a>
+                    <a href="tel:+21654885618" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-blue-600 transition">🇹🇳 +216 54 885 618</a>
+                    <a href="tel:+4915228562716" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-blue-600 transition">🇩🇪 +49 152 2856 2716</a>
                   </div>
                 </ContactItem>
 
                 <ContactItem label={t.whatsappLabel} icon={<MessageCircle size={20} strokeWidth={1.5} className="text-green-600" />}>
                   <div className="flex flex-col gap-2 items-center">
-                    <a href="https://wa.me/21628554513" target="_blank" rel="noopener noreferrer" className="text-[18px] font-bold font-mon text-slate-800 hover:text-green-600 transition">🇹🇳 +216 28 554 513</a>
-                    <a href="https://wa.me/4915228562716" target="_blank" rel="noopener noreferrer" className="text-[18px] font-bold font-mon text-slate-800 hover:text-green-600 transition">🇩🇪 +49 152 2856 2716</a>
+                    <a href="https://wa.me/21628554513" target="_blank" rel="noopener noreferrer" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-green-600 transition">🇹🇳 +216 28 554 513</a>
+                    <a href="https://wa.me/4915228562716" target="_blank" rel="noopener noreferrer" className="text-[15px] md:text-[18px] font-bold font-mono text-slate-800 hover:text-green-600 transition">🇩🇪 +49 152 2856 2716</a>
                   </div>
                 </ContactItem>
 
