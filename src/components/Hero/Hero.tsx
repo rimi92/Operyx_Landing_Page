@@ -25,7 +25,7 @@ export default function Hero({ lang }: HeroProps) {
     <section
       id="hero"
       dir={isRTL ? 'rtl' : 'ltr'}
-     className="pt-[100px] pb-[40px] bg-red-500 md:bg-green-500"
+     className="pt-[100px] pb-[40px] bg-red-500 md:bg-bleue-500"
     >
       <div className="max-w-[1650px] mx-auto px-5">
 
