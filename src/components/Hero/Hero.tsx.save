@@ -25,7 +25,7 @@ export default function Hero({ lang }: HeroProps) {
     <section
       id="hero"
       dir={isRTL ? 'rtl' : 'ltr'}
-     className="pt-[100px] pb-[40px] bg-red-500 md:bg-green-500"
+      className="pt-[100px] pb-[40px] bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF]"
     >
       <div className="max-w-[1650px] mx-auto px-5">
 
@@ -38,7 +38,9 @@ export default function Hero({ lang }: HeroProps) {
             className="absolute inset-0 w-full h-full object-cover"
           />
 
-          <div className="absolute inset-0 background: 'linear-gradient(to bottom, #BFE0FF, #EAF4FF'," />
+          \
+\
+<div className="absolute inset-0 background: 'linear-gradient(to bottom, #BFE0FF, #EAF4FF'," />
 
     <div
   className="
@@ -51,34 +53,22 @@ flex
 items-start
 "
 >
-<div
-  className="
-    absolute
-    left-4
-    md:left-20
-    top-1/2
-    -translate-y-1/2
-    flex
-    flex-col
-    items-start
-    gap-4
-    max-w-[90%]
-    md:max-w-[600px]
-  "
->
+<div className="absolute left-4 md:left-20 top-1/2 -translate-y-1/2 flex flex-col items-start gap-4 max-w-[90%]">
 
 <h1
-  className="
-    text-white
-    font-semibold
-    text-2xl
-    sm:text-3xl
-    md:text-5xl
-    lg:text-[47px]
-    leading-[1.08]
-    tracking-[-0.03em]
-    mb-4
-  "
+className="
+text-white
+font-semibold
+sm:text-3xl
+md:text-5xl
+text-2xl
+sm:text-3xl
+md:text-5xl
+lg:txt-[47px]
+leading-[1.08]
+tracking-[-0.03em]
+mb-4
+"
 >
 
 <span
@@ -131,18 +121,7 @@ mx-auto
 
   <div className="col-span-12 flex justify-center items-center">
 
-    <div
-  className="
-    grid
-    grid-cols-2
-    sm:grid-cols-3
-    lg:grid-cols-5
-    gap-6
-    md:gap-10
-    w-full
-    max-w-6xl
-  "
->
+    <div className="grid grid-cols-5 gap-10 w-full max-w-6xl">
 
       {h.pillars.slice(0, 5).map((item, i) => {
         const Icon = icons[i]

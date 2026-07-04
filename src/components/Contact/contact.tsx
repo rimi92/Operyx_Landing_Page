@@ -287,7 +287,7 @@ V
               <div className="absolute -bottom-12 -right-12 w-40 h-40 bg-blue-100/60 blur-[80px] pointer-events-none" />
             </div>
 
-V            {/* ── FORM TITLE ── */}
+            {/* ── FORM TITLE ── */}
             <div className="text-center mt-16 mb-16 pt-2 flex flex-col items-center">
               <div className="flex items-center gap-4">
                 <div className="
@@ -304,7 +304,7 @@ V            {/* ── FORM TITLE ── */}
             </div>
 
             {/* ── FORM ── */}
-V            <div className="flex justify-center w-full px-4">
+            <div className="flex justify-center w-full px-4">
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate
@@ -321,7 +321,7 @@ V            <div className="flex justify-center w-full px-4">
                   </div>
                 )}
 
-V            
+            
                 <div className="flex flex-col">
                  {/* NAME */}
                     <label className="mb-2 text-[15px] font-bold tracking-normal text-slate-800 leading-normal">
@@ -338,7 +338,7 @@ V
                   <FieldError message={errors.name?.message} />
                 </div>
 
-V                {/* COMPANY */}
+                {/* COMPANY */}
                 <div className="flex flex-col">
                   <label  className="mb-2 text-[15px] font-bold tracking-normal text-slate-800 leading-normal">
                     {t.company.charAt(0).toUpperCase() + t.company.slice(1).toLowerCase()}{' '}
