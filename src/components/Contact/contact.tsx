@@ -176,24 +176,40 @@ export default function Contact({ lang }: ContactProps) {
     defaultValues: { countryCode: '+216' },
   })
 
-  const onSubmit = async (data: ContactFormData) => {
-    if (!captchaChecked) return
+ const onSubmit = async (data: ContactFormData) => {
+  if (!captchaChecked) return
 
-    // TODO: wire email service here
-    console.log('Form data:', {
-      name:    data.name,
-      company: data.company,
-      phone:   `${data.countryCode} ${data.phone}`,
-      email:   data.email,
-      message: data.message,
+  const formData = new URLSearchParams()
+
+  formData.append('form-name', 'contact')
+  formData.append('name', data.name)
+  formData.append('company', data.company)
+  formData.append('phone', `${data.countryCode} ${data.phone}`)
+  formData.append('email', data.email)
+  formData.append('message', data.message)
+
+  try {
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formData.toString(),
     })
-    await new Promise((r) => setTimeout(r, 800)) // simulate async
+
+    if (!response.ok) {
+      throw new Error('Submission failed')
+    }
 
     setSubmitSuccess(true)
     reset()
     setCaptchaChecked(false)
     setTimeout(() => setSubmitSuccess(false), 5000)
+  } catch (error) {
+    console.error(error)
+    alert('Failed to send message.')
   }
+}
 
   return (
    <section
