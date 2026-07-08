@@ -171,7 +171,10 @@ hover:scale-[1.04]
               src={logoOperyx}
               alt="Operyx"
               className="
-h-[200px]
+mt-3
+ml-2
+h-[150px]
+sm:h-[170px]
 lg:h-[180px]
 
 w-auto
