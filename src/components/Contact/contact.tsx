@@ -204,8 +204,8 @@ export default function Contact({ lang }: ContactProps) {
 >
       {/* ── glows ── */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute left-1/2 top-[-160px] h-[640px] w-[700px] -translate-x-1/2 rounded-full bg-blue-100/60 blur-[150px]" />
-        <div className="absolute bottom-[-120px] right-[-80px] h-[420px] w-[420px] rounded-full bg-cyan-100/40 blur-[120px]" />
+        <div className="hidden md:block absolute left-1/2 top-[-160px] h-[640px] w-[700px] -translate-x-1/2 rounded-full bg-blue-100/60 blur-[150px]" />
+       <div className="hidden md:block absolute bottom-[-120px] right-[-80px] h-[420px] w-[420px] rounded-full bg-cyan-100/40 blur-[120px]" />
       </div>
 
       <div className="relative mx-auto w-full max-w-10xl px-4 sm:px-6 lg:px-8">
