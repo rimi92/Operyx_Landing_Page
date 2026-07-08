@@ -173,8 +173,8 @@ hover:scale-[1.04]
               className="
 mt-3
 ml-2
-h-[150px]
-sm:h-[170px]
+h-[95px]
+sm:h-[120px]
 lg:h-[180px]
 
 w-auto
