@@ -36,7 +36,7 @@ function App() {
    <div
   dir={isRTL ? 'rtl' : 'ltr'}
   className="
-    min-h-screen flex flex-col
+   min-h-screen flex flex-col overflow-x-hidden
     text-slate-900 dark:text-white
     transition-colors duration-500
 
