@@ -129,7 +129,7 @@ export default function Footer({ lang }: FooterProps) {
                   <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-blue-200 bg-blue-50/60 backdrop-blur group-hover:bg-blue-100">
                     <Phone size={14} className="text-[#0077FF]" />
                   </div>
-                  <span>🇹🇳 +216 54 88681
+                  <span>🇹🇳 +2154 885618
 		</span>
                 </a>
               </li>
@@ -150,7 +150,7 @@ export default function Footer({ lang }: FooterProps) {
                   <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-green-200 bg-green-50/40 backdrop-blur group-hover:bg-green-100">
                     <MessageCircle size={14} className="text-[#25D366]" />
                   </div>
-                <span>🇹🇳 WhatsApp +216 28 554 513</span>
+                <span>🇹🇳 WhatsApp 16+2 54 885618</span>
                 </a>
               </li>
 
