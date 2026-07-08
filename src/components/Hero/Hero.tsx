@@ -25,7 +25,7 @@ export default function Hero({ lang }: HeroProps) {
     <section
       id="hero"
       dir={isRTL ? 'rtl' : 'ltr'}
-     className="pt-[100px] pb-[40px] bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF]"
+    className="pt-[20px] md:pt-[100px] pb-[40px] bg-gradient-to-b from-[#BFE0FF] via-[#EAF4FF] to-[#FFFFFF]"
     >
       <div className="max-w-[1650px] mx-auto px-5">
 
