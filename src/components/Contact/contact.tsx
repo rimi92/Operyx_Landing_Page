@@ -331,11 +331,17 @@ text-slate-900
 
             {/* ── FORM ── */}
             <div className="flex justify-center w-full px-4">
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                noValidate
-                className="flex flex-col gap-8 w-full max-w-2xl"
-              >
+            <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  onSubmit={handleSubmit(onSubmit)}
+  noValidate
+  className="flex flex-col gap-8 w-full max-w-2xl"
+>
+<input type="hidden" name="form-name" value="contact" />
+<input type="hidden" name="bot-field" />
 
                 {/* SUCCESS BANNER */}
                 {submitSuccess && (
