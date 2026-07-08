@@ -39,13 +39,13 @@ export default function About({ lang }: AboutProps) {
       {/* ── Background glow ── */}
       <div style={{
         position: 'absolute', pointerEvents: 'none',
-        top: '0%', left: '-180px',
+        top: '0%', left: '-80px',
         width: 440, height: 440, borderRadius: '50%',
         background: 'radial-gradient(circle,rgba(0,102,255,.07) 0%,transparent 70%)',
       }} />
       <div style={{
         position: 'absolute', pointerEvents: 'none',
-        bottom: '0%', right: '-120px',
+        bottom: '0%', right: '-40px',
         width: 320, height: 320, borderRadius: '50%',
         background: 'radial-gradient(circle,rgba(0,102,255,.05) 0%,transparent 70%)',
       }} />
