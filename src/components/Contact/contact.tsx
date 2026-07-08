@@ -196,6 +196,8 @@ export default function Contact({ lang }: ContactProps) {
       },
       body: formData.toString(),
     })
+console.log("Response status:", response.status)
+console.log("Response ok:", response.ok)
 
     if (!response.ok) {
       throw new Error('Submission failed')
